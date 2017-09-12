@@ -1,0 +1,479 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 401029 */
+  src: url('http://at.alicdn.com/t/font_401029_q380q30fdovquxr.eot');
+  src: url('http://at.alicdn.com/t/font_401029_q380q30fdovquxr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_401029_q380q30fdovquxr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_401029_q380q30fdovquxr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_401029_q380q30fdovquxr.svg#iconfont') format('svg');
+}
+.iconfont{
+
+    font-family:"iconfont" !important;
+    /* font-size:16px; */
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+   
+}
+body{
+	background: #f2f2f2;
+}
+
+header{
+	width: 100%;
+	height: 40px;
+	background:#444;
+}
+main{
+	/* 最大值 */
+	max-width: 1024px;
+	height: 100%;
+	/* background: red; */
+	margin: 0 auto;
+
+}
+main span{
+	line-height: 40px;
+	float: right;
+	font-size: 12px;
+	color: #a8a8aa;
+}
+
+nav{
+	width: 100%;
+	height: 44px;
+	background: #000;
+}
+
+
+nav main{
+	text-align:justify;
+}
+/* 处理text-align:justify;的bug问题，只能指定为行内块元素 */
+nav main:after{
+	content:"";
+	display: inline-block;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+
+}
+nav a{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 44px;
+	color: #fff;
+	text-shadow: 5px 5px 5px #000;
+}
+
+/* banner图开始 */
+
+.banner{
+	width: 100%;
+	height: 500px;
+	/* background: pink; */
+	position: relative;
+}
+.banner-img{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/11.jpg');
+	background-size: cover;
+	background-position: top center;
+	
+}
+/* 轮播点 */
+.lunbodian{
+	position: absolute;
+	left: 40%;
+	bottom: 15px;
+
+}
+.lunbodian span{
+	width: 50px;
+	height: 2px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	background: #666;
+
+}
+/* 上一页下一页 */
+.up-page{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, .3);
+	position: absolute;
+	left: 20px;
+	top: 45%;
+}
+.up-page-r{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, .8);
+	position: absolute;
+	right: 20px;
+	top: 45%;
+	
+}
+.up-page-r i{
+	font-size: 24px;
+	line-height: 64px;
+	text-align: center;
+	display: block;
+	color:#666;
+}
+
+.up-page i{
+	font-size: 24px;
+	line-height: 64px;
+	text-align: center;
+	display: block;
+	color:#666;
+}
+
+/* banner文字 */
+.banner-wenzi{
+	width: 100%;
+	height: 217px;
+	position: absolute;
+	/* background: yellowgreen; */
+	left: 0;
+	top:0;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-content:center;
+}
+.banner-wenzi h1{
+	width: 100%;
+	margin-top: 10px;
+}
+.banner-wenzi h1:nth-child(1){
+	font-size: 32px;
+}
+.banner-wenzi h1:nth-child(2){
+	font-size: 48px;
+}
+
+
+
+
+/* banner下一栏 */
+.list{
+	width: 100%;
+	height: 272px;
+	background: red;
+	border: 2px solid #fff;
+}
+.list ul li{
+	width: 25%;
+	height: 272px;
+	background-image: url('../img/100.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding-top: 30px;
+
+}
+.list ul li h3{
+	width: 80%;
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.list ul li h4{
+	width: 100%;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	margin: 0 auto;
+
+}
+.list ul li h5{
+	width: 100%;
+	display: block;
+	font-size: 8px;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+
+
+/* 底部区域开始 */
+
+footer{
+	width:1024px;
+	margin: 0 auto;
+	height: 500px;
+	
+}
+/* 上 */
+.content-top{
+	width: 100%;
+	border-bottom: 1px solid #999;
+	padding: 17px 0;
+	float: left;
+
+}
+.content-top span{
+	font-size: 12px;
+	display:block;
+	line-height: 20px;
+	color: #888;
+}
+/* 中 */
+.content-list{
+	width: 100%;
+	margin-top: 40px;
+	float: left;
+}
+.content-list ul{
+	width: 20%;
+	font-size: 12px;
+	color: #888;
+	line-height:15px;
+	float: left;
+}
+.content-list ul li{
+	margin-bottom: 7px;
+}
+.content-list ul li h1{
+	font-size: 12px;
+	color: #333;
+	font-weight: bold;
+}
+.content-list ul li a{
+	color:#555;
+	
+}
+.content-list ul li a:hover{
+	text-decoration: underline;
+	
+}
+
+
+.content-list .hh1{
+	margin-top: 40px;
+}
+/* 下面第二栏 */
+.content-btom{
+	width: 100%;
+	margin-top: 40px;
+	float: left;
+	color: #888;
+}
+.content-btom-l{
+	width: 100%;
+	border-bottom: 1px solid #888;
+	font-size: 12px;
+	line-height: 24px;
+}
+.content-btom-center{
+	font-size: 12px;
+	line-height: 24px;
+	float: left;
+}
+.content-btom-r{
+	float: right;
+	font-size: 12px;
+	
+}
+.content-btom-r span:nth-child(1){
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/14.png");
+	background-size: 100%;
+	float: left;
+	margin-right: 5px;
+}
+/* 底部 */
+.conter-foot{
+	width: 100%;
+	float: left;
+	font-size: 12px;
+	line-height: 24px;
+	color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 设置条件，改变布局，改变方式 */
+/* 监控当前屏幕大小
+	屏幕<1024px;
+ and跟值 中间有空格; max屏幕最大值*/
+@media screen and (max-width:1024px){
+	main{
+		padding-right: 24px;
+	}
+	nav main{
+		padding-left: 24px;
+	}
+	.banner{
+		height: 460px;
+	}
+	.banner-img{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/22.jpg');
+	background-size: cover;
+	background-position: top center;
+	}
+	.banner-wenzi h1:nth-child(1){
+	font-size: 28px;
+	}
+	.banner-wenzi h1:nth-child(2){
+	font-size: 38px;
+	}
+	.list ul li{
+		width: 50%;
+		background-image: url('../img/50.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+}
+
+
+
+
+
+
+
+/* 屏幕大于767px */
+@media screen and (min-width:767px){
+	.nav-big{
+		display: block;
+	}
+	.nav-small{
+		display: none;
+	}
+	.banner-wenzi{
+		height: 211px;
+		
+	}
+	
+
+	
+}
+
+
+
+
+
+
+/* 屏幕小于767px */
+@media screen and (max-width:767px){
+	.nav-small{
+		display:block;
+	}
+
+	.nav-big{
+		display:none;
+	}
+	.banner{
+		height: 380px;
+	}
+	.banner-img{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/33.jpg');
+	background-size: cover;
+	background-position: top center;
+	}
+	.banner-wenzi{
+		height: 201px;
+		
+	}
+	.banner-wenzi h1:nth-child(1){
+	font-size: 22px;
+	}
+	.banner-wenzi h1:nth-child(2){
+	font-size: 30px;
+	}
+	.list ul li{
+		width: 100%;
+		background-image: url('../img/25.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.content-btom .content-btom-l{
+		border: none;
+	}
+	.content-btom .content-btom-center{
+		margin-top: 7px;
+		float: none;
+	}
+	.content-btom .content-btom-r{
+		margin-top: 7px;
+		float: none;
+		margin-bottom: 20px;
+	}
+	.content-list{
+		margin-top: 0;
+	}
+	.content-list ul{
+		width: 100%;
+		border-bottom: 1px solid #888;
+		overflow: hidden;
+    	line-height: 24px;
+		height: 40px;
+		padding-bottom: 20px;
+	}
+	.content-list ul h1{
+		padding: 10px 0;
+	}
+	.content-list ul:hover{
+		overflow: visible;
+		height: auto;
+		
+	}
+
+
+
+}
